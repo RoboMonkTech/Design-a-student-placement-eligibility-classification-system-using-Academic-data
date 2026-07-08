@@ -1,31 +1,168 @@
-<div class="left">
+<!DOCTYPE html>
+<html lang="en">
 
-<h2>Student Academic Details</h2>
+<head>
 
-<label>Student Name</label>
-<input type="text" id="name" placeholder="Enter Student Name">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<label>Attendance (%)</label>
-<input type="number" id="attendance" placeholder="Enter Attendance">
+    <title>Student Placement Eligibility Classification System</title>
 
-<label>Midterm Score</label>
-<input type="number" id="midterm" placeholder="Enter Midterm Score">
+    <link rel="stylesheet" href="style.css">
 
-<label>Final Exam Score</label>
-<input type="number" id="finalscore" placeholder="Enter Final Exam Score">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<label>Assignment Average</label>
-<input type="number" id="assignment" placeholder="Enter Assignment Average">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-<label>Project Score</label>
-<input type="number" id="project" placeholder="Enter Project Score">
+</head>
 
-<label>Study Hours per Week</label>
-<input type="number" id="study" placeholder="Enter Study Hours">
+<body>
 
-<button onclick="predictPlacement()">
-<i class="fa-solid fa-graduation-cap"></i>
-Predict Placement
-</button>
+    <header>
 
-</div>
+        <h1><i class="fa-solid fa-user-graduate"></i> Student Placement Eligibility Classification System</h1>
+
+        <p>Machine Learning Project | Random Forest Classifier</p>
+
+    </header>
+
+    <div class="container">
+
+        <!-- Left Side -->
+
+        <div class="form-card">
+
+            <h2><i class="fa-solid fa-clipboard-list"></i> Student Academic Details</h2>
+
+            <label>Student Name</label>
+            <input type="text" id="name" placeholder="Enter Student Name">
+
+            <label>Attendance (%)</label>
+            <input type="number" id="attendance" placeholder="Enter Attendance">
+
+            <label>Midterm Score</label>
+            <input type="number" id="midterm" placeholder="Enter Midterm Score">
+
+            <label>Final Exam Score</label>
+            <input type="number" id="finalscore" placeholder="Enter Final Exam Score">
+
+            <label>Assignment Average</label>
+            <input type="number" id="assignment" placeholder="Enter Assignment Average">
+
+            <label>Project Score</label>
+            <input type="number" id="project" placeholder="Enter Project Score">
+
+            <label>Study Hours Per Week</label>
+            <input type="number" id="study" placeholder="Enter Study Hours">
+
+            <button onclick="predictPlacement()">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Predict Placement
+
+            </button>
+
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="result-card">
+
+            <div class="circle">
+
+                <i class="fa-solid fa-user-check"></i>
+
+            </div>
+
+            <h2 id="output">
+
+                Waiting for Prediction
+
+            </h2>
+
+            <p id="message">
+
+                Enter student academic details and click
+                <b>Predict Placement</b>.
+
+            </p>
+
+            <div class="result-grid">
+
+                <div class="box">
+
+                    <h3>Confidence</h3>
+
+                    <p id="confidence">--</p>
+
+                </div>
+
+                <div class="box">
+
+                    <h3>Status</h3>
+
+                    <p id="status">--</p>
+
+                </div>
+
+            </div>
+
+            <div class="project">
+
+                <h3>Project Information</h3>
+
+                <table>
+
+                    <tr>
+
+                        <td>Algorithm</td>
+
+                        <td>Random Forest</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Language</td>
+
+                        <td>Python</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Platform</td>
+
+                        <td>Google Colab</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Deployment</td>
+
+                        <td>GitHub + Vercel</td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        Student Placement Eligibility Classification System | Machine Learning Dashboard
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
